@@ -1,37 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🩵 Commit Rules 🩵
 
-## Getting Started
+- `feat`: 새로운 기능 추가
+- `fix`: 버그 수정
+- `docs`: 문서 변경
+- `style`: 코드 스타일 변경(코드 변경 없음)
+- `refactor`: 코드 리팩토링(버그 수정이나 기능 추가 없음)
+- `test`: 테스트 추가 또는 수정
+- `chore`: 기타 변경사항(빌드 태스크, 패키지 매니저 등)
 
-First, run the development server:
+## 🧡 Branch Rules 🧡
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- `main`, `dev`
+  - `main`: 라이브 배포 페이지
+  - `dev`: 개발용 브랜치
+  - `deploy`: 테스트 배포 페이지 브랜치
+- 브랜치명: `feat/기능` , `feat/signup`, `style/article`, `hotfix/login` 형식으로 사용
+- 기능별로 브랜치파고 머지하고 사용하지 않는 브랜치 바로 삭제하기
+- PR 사용 필수 (2명) 코드 리뷰 간단히라도 하기
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💛 Code Rules 💛
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 변수명: 축약하지말고 시멘틱하게(btn X → button) ,카멜케이스
+  - 복수형 예시: diaries, users
+- 함수명 : 동사로 , 이벤트핸들러 함수는 handle로 시작
+  - 화살표 함수
+- 컴포넌트 : 화살표함수(기본) , rafce
+- 주석: 필수적인 것만 설명한 필요할 경우 사용
+- console.log 다 지우셈
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💚 폴더구조 간단설명 💚
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# FE_SunnySide
+-공용컴포넌트는 components에 만들기 -페이지별 컴포넌트는 페이지 안에 \_components 폴더 안에 만들기 -전역관리 필요한 사람은 zustandStore폴더 안에 파일만들기! 예시) realEstateStore.ts
+-zustand type은 types폴더 안에 zustandStore.type.ts에 만들기! 이름예시) export type tRealEstateStore
