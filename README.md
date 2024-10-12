@@ -1,12 +1,12 @@
 ## 🩵 Commit Rules 🩵
 
-- `feat`: 새로운 기능 추가
-- `fix`: 버그 수정
-- `docs`: 문서 변경
-- `style`: 코드 스타일 변경(코드 변경 없음)
-- `refactor`: 코드 리팩토링(버그 수정이나 기능 추가 없음)
-- `test`: 테스트 추가 또는 수정
-- `chore`: 기타 변경사항(빌드 태스크, 패키지 매니저 등)
+- feat: 새로운 기능 추가
+- fix: 버그 수정
+- docs: 문서 변경
+- style: 코드 스타일 변경(코드 변경 없음)
+- refactor: 코드 리팩토링(버그 수정이나 기능 추가 없음)
+- test: 테스트 추가 또는 수정
+- chore: 기타 변경사항(빌드 태스크, 패키지 매니저 등)
 
 ## 🧡 Branch Rules 🧡
 
@@ -14,7 +14,7 @@
   - `main`: 라이브 배포 페이지
   - `dev`: 개발용 브랜치
   - `deploy`: 테스트 배포 페이지 브랜치
-- 브랜치명: `feat/기능` , `feat/signup`, `style/article`, `hotfix/login` 형식으로 사용
+- 브랜치명: feat/기능 , feat/signup, style/article, hotfix/login 형식으로 사용
 - 기능별로 브랜치파고 머지하고 사용하지 않는 브랜치 바로 삭제하기
 - PR 사용 필수 (2명) 코드 리뷰 간단히라도 하기
 
@@ -30,5 +30,13 @@
 
 ## 💚 폴더구조 간단설명 💚
 
--공용컴포넌트는 components에 만들기 -페이지별 컴포넌트는 페이지 안에 \_components 폴더 안에 만들기 -전역관리 필요한 사람은 zustandStore폴더 안에 파일만들기! 예시) realEstateStore.ts
+-공용컴포넌트는 components에 만들기 
+
+-페이지별 컴포넌트는 페이지 안에 _components 폴더 안에 만들기 
+
+-전역관리 필요한 사람은 zustandStore폴더 안에 파일만들기! 예시) realEstateStore.ts
+
 -zustand type은 types폴더 안에 zustandStore.type.ts에 만들기! 이름예시) export type tRealEstateStore
+
+<img width="268" alt="스크린샷 2024-10-12 오후 11 04 51" src="https://github.com/user-attachments/assets/7866163f-d6f0-463a-bff8-1f7a8d264cce">
+
