@@ -30,13 +30,6 @@
 
 ## 💚 폴더구조 간단설명 💚
 
--공용컴포넌트는 components에 만들기 
+-공용컴포넌트는 components에 만들기
 
--페이지별 컴포넌트는 페이지 안에 _components 폴더 안에 만들기 
-
--전역관리 필요한 사람은 zustandStore폴더 안에 파일만들기! 예시) realEstateStore.ts
-
--zustand type은 types폴더 안에 zustandStore.type.ts에 만들기! 이름예시) export type tRealEstateStore
-
-<img width="268" alt="스크린샷 2024-10-12 오후 11 04 51" src="https://github.com/user-attachments/assets/7866163f-d6f0-463a-bff8-1f7a8d264cce">
-
+-페이지별 컴포넌트는 페이지 안에 \_components 폴더 안에 만들기

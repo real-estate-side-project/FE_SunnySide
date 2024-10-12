@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import QueryProvider from "@/components/providers/TanStackQueryClientProvider";
+import QueryProvider from "@/providers/TanStackQueryClientProvider";
 
 const pretendard = localFont({
   src: "../fonts/PretendardVariable.woff2",
